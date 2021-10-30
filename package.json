@@ -4,7 +4,7 @@
   "description": "Basi config",
   "main": "index.js",
   "scripts": {
-    "start": "webpack --config webpack.dev.js",
+    "lint": "eslint . --fix",
     "dev": "webpack server --open --config webpack.dev.js",
     "build": "webpack --config webpack.prod.js"
   },
@@ -27,14 +27,5 @@
     "webpack-cli": "^4.7.2",
     "webpack-dev-server": "^3.11.2",
     "webpack-merge": "^5.8.0"
-  },
-  "babel": {
-    "presets": [
-      "react",
-      "env"
-    ],
-    "plugins": [
-      "transform-object-rest-spread"
-    ]
   }
 }
